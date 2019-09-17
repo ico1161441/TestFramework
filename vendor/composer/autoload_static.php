@@ -20,12 +20,17 @@ class ComposerStaticInit4d60de4b55dbf2af47c0ca604700d464
         array (
             'Webmozart\\Assert\\' => 17,
         ),
+        'T' => 
+        array (
+            'Tests\\' => 6,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
         ),
         'P' => 
         array (
+            'Psr\\Http\\Message\\' => 17,
             'Prophecy\\' => 9,
         ),
         'F' => 
@@ -50,9 +55,17 @@ class ComposerStaticInit4d60de4b55dbf2af47c0ca604700d464
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
+        'Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
+        ),
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Prophecy\\' => 
         array (
