@@ -26,6 +26,7 @@ class ComposerStaticInit4d60de4b55dbf2af47c0ca604700d464
         ),
         'Z' => 
         array (
+            'Zend\\HttpHandlerRunner\\' => 23,
             'Zend\\Diactoros\\' => 15,
         ),
         'W' => 
@@ -42,6 +43,7 @@ class ComposerStaticInit4d60de4b55dbf2af47c0ca604700d464
         ),
         'P' => 
         array (
+            'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
             'Prophecy\\' => 9,
         ),
@@ -63,6 +65,10 @@ class ComposerStaticInit4d60de4b55dbf2af47c0ca604700d464
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
+        'Zend\\HttpHandlerRunner\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-httphandlerrunner/src',
+        ),
         'Zend\\Diactoros\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-diactoros/src',
@@ -78,6 +84,10 @@ class ComposerStaticInit4d60de4b55dbf2af47c0ca604700d464
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'Psr\\Http\\Server\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-server-handler/src',
         ),
         'Psr\\Http\\Message\\' => 
         array (
