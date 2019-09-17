@@ -1,16 +1,17 @@
 <?php
 
-use Framework\Http\RequestFactory;
-use Framework\Http\Response;
+use Zend\Diactoros\Response\HtmlResponse;
+use Zend\Diactoros\ServerRequestFactory;
 
 chdir(dirname(__DIR__));
 require_once "vendor/autoload.php";
 
-$request = RequestFactory::fromGlobals();
+$request = ServerRequestFactory::fromGlobals();
 
 $name = $request->getQueryParams()['name'] ?? 'Guest';
 
-$response = (new Response('Hello, ' . $name . '!'))->withHeader('X-Dev', 'ElisDN');
+$response = (new HtmlResponse('Hello, ' . $name . '!'))
+    ->withHeader('X-Dev', 'ElisDN');
 
 header('HTTP/1.0' . $response->getStatusCode() . ' ' . $response->getReasonPhrase());
 foreach ($response->getHeaders() as $name => $values) {
